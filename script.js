@@ -5,8 +5,12 @@ function insert_Row() {
 	//retriving and adding row to table
 	let row_val = document.createElement('tr');
 	// tb_val.append(row_val);
+
+	let new_row = tb_val.insertRow(0); //row_val
+	new_row.append(col_left_val,col_right_val);
 	//adding row to tb with insertbefore adding roe and refrence chield
-	tb_val.insertBefore(row_val, tb_val.firstElementChild);
+	// tb_val.insertBefore(row_val, tb_val.firstElementChild);
+	
 	
 
 	//retriving and adding text and adding to row
